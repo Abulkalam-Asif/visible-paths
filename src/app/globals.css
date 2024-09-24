@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+@keyframes slideAlert {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animate-alert {
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation: slideAlert 5s linear forwards;
+}
+
+#google_translate_element,
+#google_translate_element .goog-te-gadget-simple,
+#google_translate_element .goog-te-gadget-simple a {
+  background-color: #111111;
+  color: #fff;
+  border: none;
+  margin: 0;
+}
+
+#google_translate_element .goog-te-gadget-simple {
+  border-radius: 8px;
+}
+
+.goog-te-gadget-simple a {
+  display: flex;
+  padding: 0.125rem 0.75rem;
+}
+
+.goog-te-gadget-icon {
+  display: none;
+}
+
+.goog-te-gadget-simple span {
+  border-left: none !important;
+}
+
+/* Newsletter */
+#mc_embed_signup#mc_embed_signup {
+  background-color: transparent;
+  font-size: 1rem;
+}
+
+#mc-embedded-subscribe-form#mc-embedded-subscribe-form {
+  margin: 0;
+}
+
+#mc_embed_signup_scroll#mc_embed_signup_scroll {
+  width: 100%;
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
+#mc_embed_signup#mc_embed_signup .mc-field-group {
+  width: 100%;
+  padding-bottom: 0;
+  min-height: 0;
+}
+
+#mc_embed_signup#mc_embed_signup .mc-field-group input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  text-indent: 0;
+  border-radius: 0;
+}
+
+#mc-embedded-subscribe#mc-embedded-subscribe {
+  margin: 0;
+}
+
+
+#mc_embed_signup #mce-responses#mce-responses {
+  margin: 0;
+  width: 100%;
+  grid-template-columns: 1fr;
+}
+
+#mc_embed_signup #mce-responses#mce-responses #mce-error-response,
+#mc_embed_signup #mce-responses#mce-responses #mce-success-response {
+  margin: 0;
+  width: 100%;
+}
